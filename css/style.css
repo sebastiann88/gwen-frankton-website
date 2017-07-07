@@ -14,6 +14,10 @@ body {
     flex: 1;
 }
 
+ul li {
+    list-style-type: none;
+}
+
 /* --- NAVIGATION --- */
 
 nav.navbar {
@@ -50,3 +54,60 @@ div.down-arrow i {
     margin: 0 auto;
     font-size: 2.5em;
 }
+
+/* --- PORTFOLIO --- */
+
+div.portfolio-snippets {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+div.portfolio-snippets div {
+    display: inline-block;
+    width: 100%;
+}
+
+div.portfolio-snippets div a,
+div.portfolio-snippets div a h3 {
+    display: inline-block;
+    width: 100%;
+    max-width: 5em;    
+}
+
+div.portfolio-snippets div a:hover, div.portfolio-snippets div a:focus {
+    text-decoration: none;
+}
+
+div.portfolio-snippets div a h3 {
+    color: #000; 
+}
+
+div.portfolio-snippets div a:hover h3 {
+    text-decoration: none;
+    color: cadetblue;
+}
+
+div.portfolio-snippets i {
+    display: inline-block;
+    justify-content: flex-end;
+    width: 100%;
+    max-width: 2em;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+div.card > div.collapse {
+    margin: 3em;
+}
+
+div.card-block {
+    border-left: 1px solid #000;
+}
+
+/*div.portfolio-snippets a:hover {
+    text-decoration: none;
+}*/
+
+
+
