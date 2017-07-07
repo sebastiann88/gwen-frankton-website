@@ -1,0 +1,52 @@
+/* MAIN STYLES */
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+}
+
+.row, .contact_page {
+    flex: 1;
+}
+
+/* --- NAVIGATION --- */
+
+nav.navbar {
+    background-color: #fcfcf6;
+}
+
+nav.navbar div {
+    justify-content: flex-end;
+}
+
+/* --- JUMBOTRON --- */
+
+div.jumbotron {
+    background-color: #fcfcf6;
+    padding: 4rem 2rem 0rem 2rem;
+    margin-bottom: 0;
+}
+
+h2.introduction {
+    font-weight: normal;
+    text-align: center;
+    line-height: 1.5;
+}
+
+div.down-arrow {
+    width: 100%;
+    max-width: 30em;
+    margin: 3em auto;
+}
+
+div.down-arrow i {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 2.5em;
+}
