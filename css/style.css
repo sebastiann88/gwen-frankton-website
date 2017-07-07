@@ -18,6 +18,10 @@ ul li {
     list-style-type: none;
 }
 
+img.img-circle {
+    border-radius: 50%;
+}
+
 /* --- NAVIGATION --- */
 
 nav.navbar {
@@ -68,14 +72,21 @@ div.portfolio-snippets div {
     width: 100%;
 }
 
+div.portfolio-snippets a {
+     margin: 0 auto;
+     width: 100%;
+     max-width: 2em;
+}
+
 div.portfolio-snippets div a,
 div.portfolio-snippets div a h3 {
     display: inline-block;
     width: 100%;
-    max-width: 5em;    
+    max-width: 5em; 
 }
 
-div.portfolio-snippets div a:hover, div.portfolio-snippets div a:focus {
+div.portfolio-snippets div a:hover, 
+div.portfolio-snippets div a:focus {
     text-decoration: none;
 }
 
@@ -97,17 +108,94 @@ div.portfolio-snippets i {
     text-decoration: none;
 }
 
-div.card > div.collapse {
-    margin: 3em;
+div.portfolio-snippets > a {
+    display: inline-block;
+    width: 100%;
+    max-width: 4.5em;
+    margin: 0 auto;
+    text-align: center;
+    color: #000;
+}
+
+/* --- PORTFOLIO SNIPPETS --- */
+
+div.card div > div.card-block {
+    margin: 2.5em;
 }
 
 div.card-block {
     border-left: 1px solid #000;
 }
 
-/*div.portfolio-snippets a:hover {
-    text-decoration: none;
-}*/
+/* --- SECTION FUNDRAISING --- */
+
+section.fundraising div.row {
+    margin: 3em auto;
+}
+
+section.fundraising div.row div {
+    padding: 0;   
+}
+
+section.fundraising div.row div:nth-child(2) h3 {
+    margin: .75em auto 1em auto;
+}
+
+section.fundraising h2,
+section.fundraising h3,
+section.fundraising ul {
+    text-align: center;
+}
+
+section.fundraising h2 {
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase; 
+}
+
+section.fundraising h3 {
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+/* --- QUOTE --- */
+
+section.quote-img {
+    background-image: url("http://via.placeholder.com/500x300");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 0;
+}
+
+section.quote-img figure h3 {
+    margin: 0.75em auto;
+    font-weight: 300;
+}
+
+section.quote-img figcaption {
+   text-align: right; 
+}
+
+/* --- ABOUT QWEN --- */
+
+section.about > div.row div:first-child {
+    display: block;
+    width: 100%;
+    max-width: 15em;
+    margin: 3em auto;  
+}
+
+section.about > div.row div h2 {
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+
+
+
 
 
 
