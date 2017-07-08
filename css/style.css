@@ -143,7 +143,7 @@ section > div.myAcc > div.row {
     display: flex;
 }
 
-section > div.myAcc > div.row div.col-md-4 {
+section > div.myAcc > div.row div.col-md-5 {
    display: -webkit-flex;
    display: flex;
    -webkit-flex-direction: column;  works with row or column 
