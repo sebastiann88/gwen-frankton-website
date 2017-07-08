@@ -8,6 +8,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: 100%;
     text-rendering: optimizeLegibility;
+    padding-top: 56px;
 }
 
 .row, .contact_page {
@@ -22,9 +23,10 @@ ul li {
 
 nav.navbar {
     background-color: #fcfcf6;
+    padding: 0.6rem 1rem;
 }
 
-nav.navbar div {
+nav.navbar > div.container div.navbar-collapse {
     justify-content: flex-end;
 }
 
@@ -303,6 +305,17 @@ div.social-media div > h5 {
 
 /* --- MEDIA QUERIES --- */
 
+@media (max-width: 576px) {
+    nav.navbar > div.container {
+            width: 100%;
+            border-bottom: none;
+    }
+
+    button.navbar-toggler-right {
+        right: 0rem;
+    }
+}
+
 /* --- Small --- */
 
 @media (min-width: 576px) {
@@ -326,6 +339,38 @@ div.social-media div > h5 {
 
     section > div.myAcc div.col-md-6:nth-child(7) {
         margin-bottom: 0;
+    }
+
+    /* --- NAVIGATION FLEXBOX--- */
+
+    nav.navbar > div.container div.nav-flexbox {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    div.nav-flexbox ul.flex-nav-1 {
+        display: flex;
+        justify-content: flex-start; 
+    }
+
+    div.nav-flexbox a.flex-logo {
+        display: flex;
+        justify-content: center; 
+    }
+
+    div.nav-flexbox ul.flex-nav-2 {
+        display: flex;
+        justify-content: flex-end; 
+    }
+
+    div.nav-flexbox ul.flex-nav-1 li,
+    div.nav-flexbox ul.flex-nav-2 li {
+        margin-right: 1.5em;
+    }
+
+    div.nav-flexbox ul.flex-nav-1 li:last-child,
+    div.nav-flexbox ul.flex-nav-2 li:last-child {
+        margin-right: 0;
     }
 }
 
