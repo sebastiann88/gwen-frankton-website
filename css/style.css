@@ -18,10 +18,6 @@ ul li {
     list-style-type: none;
 }
 
-img.img-circle {
-    border-radius: 50%;
-}
-
 /* --- NAVIGATION --- */
 
 nav.navbar {
@@ -141,10 +137,27 @@ section.fundraising div.row div:nth-child(2) h3 {
     margin: .75em auto 1em auto;
 }
 
+/*section.fundraising div.row div.border-right {
+    border-right: none;
+}*/
+
 section.fundraising h2,
 section.fundraising h3,
 section.fundraising ul {
-    text-align: center;
+    text-align: left;
+    padding-left: 0;
+}
+
+section.fundraising ul li,
+section.fundraising ul a {
+    line-height: 1.8;
+    color: #000;
+    text-decoration: none;
+}
+
+section.fundraising ul a:hover {
+    text-decoration: none;
+    border-bottom: 1px dashed #000;
 }
 
 section.fundraising h2 {
@@ -161,11 +174,26 @@ section.fundraising h3 {
 /* --- QUOTE --- */
 
 section.quote-img {
-    background-image: url("http://via.placeholder.com/500x300");
+    display: flex;
+    background-image: url("http://via.placeholder.com/950x2100/5b686b");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     margin-bottom: 0;
+    width: 100%;
+    height: 20em;
+}
+
+section.quote-img > div.container {
+    display: flex;
+    width: 100%;
+    max-width: 85em;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+section.quote-img > div.container figure {
+    margin: 0 auto;
 }
 
 section.quote-img figure h3 {
@@ -179,17 +207,104 @@ section.quote-img figcaption {
 
 /* --- ABOUT QWEN --- */
 
+section.about > div.row {
+    margin: 3em 0;
+}
+
 section.about > div.row div:first-child {
     display: block;
     width: 100%;
     max-width: 15em;
-    margin: 3em auto;  
+    margin: 1.5em auto 3em auto;  
 }
 
 section.about > div.row div h2 {
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-weight: 700;
+    margin-bottom: 0.75em;
     text-transform: uppercase;
+}
+
+section.quote-img h3,
+section.quote-img figcaption {
+    text-align: right;
+    color: #fff;
+}
+
+img.img-circle {
+    width: 100%;
+    max-width: 35em;
+    border-radius: 50%;
+}
+
+/* --- FOOTER --- */
+
+footer {
+    text-align: center;
+    padding: 3em 1em;
+    color: #fff;
+    background-color: #5b686b;
+}
+
+footer h6.copyright {
+    text-transform: uppercase;
+}
+
+div.social-media div {  
+    display: inline-block;
+    margin: 1em 1.5em 1em auto;
+}
+
+div.social-media div > i {  
+    margin-right: 0.2em;
+}
+
+div.social-media div > i:last-child {  
+    margin-right: 0;
+}
+
+div.social-media div > h5 {
+    font-weight: 300;
+}
+
+div.social-media div:last-child {
+    margin-right: 0;
+}
+
+div.social-media div > i,
+div.social-media div > h5 {
+    display: inline-block;
+}
+
+/* --- MEDIA QUERIES --- */
+
+/* --- Small --- */
+
+@media (min-width: 576px) {
+
+}
+
+
+/* --- Medium --- */
+
+@media (min-width: 768px) {
+
+
+}
+
+/* --- Large --- */
+
+@media (min-width: 992px) {
+    section.fundraising div.row div.border-right {
+        border-right: 1px solid #000;
+    }
+    
+}
+
+/* --- Extra large --- */
+
+@media (min-width: 1200px) {
+
 }
 
 
