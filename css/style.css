@@ -57,6 +57,10 @@ div.down-arrow i {
 
 /* --- PORTFOLIO --- */
 
+section.portfolio {
+    background-color: #fcfcf6;
+}
+
 div.portfolio-snippets {
     display: flex;
     flex-direction: row;
