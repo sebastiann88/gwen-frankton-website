@@ -123,6 +123,31 @@ div.card-block {
     border-left: 1px solid #000;
 }
 
+section > div.myAcc div.col-sm-12 {
+    padding: 0;
+}
+
+/*section > div.myAcc > div.row ul {
+    padding-left: 1.75em;
+    margin: 1em 0 0 0.5em;
+    border-left: 1px solid #000;
+}*/
+
+section > div.myAcc > div.row {
+    display: flex;
+}
+
+section > div.myAcc > div.row div.col-md-4 {
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: column;  works with row or column 
+   flex-direction: column;
+   -webkit-align-items: left;
+   align-items: left;
+   -webkit-justify-content: center;
+   justify-content: center;
+}
+
 /* --- SECTION FUNDRAISING --- */
 
 section.fundraising div.row {
@@ -136,10 +161,6 @@ section.fundraising div.row div {
 section.fundraising div.row div:nth-child(2) h3 {
     margin: .75em auto 1em auto;
 }
-
-/*section.fundraising div.row div.border-right {
-    border-right: none;
-}*/
 
 section.fundraising h2,
 section.fundraising h3,
@@ -289,7 +310,19 @@ div.social-media div > h5 {
 
 @media (min-width: 768px) {
 
+    section > div.myAcc > div.row ul {
+        padding-left: 1.75em;
+        margin: 1em 0 0 0.5em;
+        border-left: 1px solid #000;
+    }
 
+    section > div.myAcc div.col-md-6 {
+        margin-bottom: 1.5em;
+    }
+
+    section > div.myAcc div.col-md-6:nth-child(7) {
+        margin-bottom: 0;
+    }
 }
 
 /* --- Large --- */
