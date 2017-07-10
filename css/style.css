@@ -49,6 +49,10 @@ nav.navbar {
     padding: 0.6rem 1rem;
 }
 
+a.blog-logo {
+    margin-left: 3.3em;
+}
+
 /* --- JUMBOTRON --- */
 
 div.jumbotron {
@@ -165,12 +169,56 @@ section > div.myAcc > div.row {
 section > div.myAcc > div.row div.col-md-5 {
    display: -webkit-flex;
    display: flex;
-   -webkit-flex-direction: column;  works with row or column 
+   -webkit-flex-direction: column;
    flex-direction: column;
    -webkit-align-items: left;
    align-items: left;
    -webkit-justify-content: center;
    justify-content: center;
+}
+
+/* --- COLLECTION SECTION --- */
+
+section.collection-section > div.collection-intro {
+    text-align: center;
+    border-bottom: 25px solid #f3f3e7;
+}
+
+section.collection-section > div.collection-intro h2 {
+    padding: 0.25em 0 0.75em 0;
+}
+
+section.collection-section > div.collection-intro h5 {
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+section.collection-section > div.collection-intro > img {
+    display: block;
+    border-radius: 50%;
+    margin: 0 auto;
+    padding: 1.5em 0;
+    width: 6em;
+}
+
+/* --- PROJECT DROP DOWN --- */
+
+nav.portfolio-drop-down > div.collapse-nav div.navbar-collapse {
+    position: absolute;
+    top: 2.45rem;
+    left: 45%;
+    margin-right: 5%;
+    z-index: 5;
+    background-color: #f3f3e7;
+}
+
+nav.portfolio-drop-down > div.collapse-nav div.navbar-collapse > ul li {
+    padding: 0.5em 1.75em;
+}
+
+nav.portfolio-drop-down > div.collapse-nav div.navbar-collapse > ul li:hover {
+    background-color: #cecec2;
 }
 
 /* --- SECTION FUNDRAISING --- */
@@ -374,7 +422,7 @@ div.social-media div > h5 {
 
     nav.main-nav > div.collapse-nav div.navbar-collapse {
         position: absolute;
-        top: 3rem;
+        top: 2.95rem;
     }
 
     nav.main-nav > div.collapse-nav div.navbar-collapse {
