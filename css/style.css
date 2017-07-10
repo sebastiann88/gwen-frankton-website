@@ -204,21 +204,48 @@ section.collection-section > div.collection-intro > img {
 
 /* --- PROJECT DROP DOWN --- */
 
+nav.portfolio-drop-down {
+    padding-top: 3em;
+    padding-bottom: 1.5em;
+}
+
+nav.portfolio-drop-down > div.collapse-nav {
+    width: 100%;
+    max-width: 15em;
+    margin: 0 auto;
+}
+
 nav.portfolio-drop-down > div.collapse-nav div.navbar-collapse {
     position: absolute;
-    top: 2.45rem;
-    left: 45%;
-    margin-right: 5%;
+    top: 3.35rem;
+    left: 0;
+    width: 100%;
+    margin-right: 0;
+    text-align: center;
     z-index: 5;
     background-color: #f3f3e7;
 }
 
 nav.portfolio-drop-down > div.collapse-nav div.navbar-collapse > ul li {
-    padding: 0.5em 1.75em;
+    padding: 0.5em 3em;
 }
 
 nav.portfolio-drop-down > div.collapse-nav div.navbar-collapse > ul li:hover {
     background-color: #cecec2;
+}
+
+/* --- PROJECTS --- */
+
+section.projects > div.container > div.row div.p-text {
+    padding-top: 1.75em;
+    padding-bottom: 1.75em;
+}
+
+section.projects > div.container > div.row div.p-text::first-letter {
+    font-size: 2rem;
+    font-family: "morionregular", sans-serif;
+    font-weight: 700;
+    padding-right: 0.20em;
 }
 
 /* --- SECTION FUNDRAISING --- */
