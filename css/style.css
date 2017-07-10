@@ -1,3 +1,26 @@
+/* FONTS */
+
+@font-face {
+    font-family: 'morionregular';
+    src: url('../fonts/typekit/morion-regular-webfont.eot');
+    src: url('../fonts/typekit/morion-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/typekit/morion-regular-webfont.woff2') format('woff2'),
+         url('../fonts/typekit/morion-regular-webfont.woff') format('woff'),
+         url('../fonts/typekit/morion-regular-webfont.ttf') format('truetype'),
+         url('../fonts/typekit/morion-regular-webfont.svg#morionregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1, h2, h3, a {
+    font-family: "morionregular", sans-serif;
+}
+
+h4, h5, h6 {
+    font-family: "skolar-sans-latin", sans-serif;
+}
+
+
 /* MAIN STYLES */
 
 body {
@@ -24,10 +47,6 @@ ul li {
 nav.navbar {
     background-color: #fcfcf6;
     padding: 0.6rem 1rem;
-}
-
-nav.navbar > div.container div.navbar-collapse {
-    justify-content: flex-end;
 }
 
 /* --- JUMBOTRON --- */
@@ -306,13 +325,9 @@ div.social-media div > h5 {
 /* --- MEDIA QUERIES --- */
 
 @media (max-width: 576px) {
-    nav.navbar > div.container {
-            width: 100%;
-            border-bottom: none;
-    }
-
-    button.navbar-toggler-right {
-        right: 0rem;
+        nav.navbar > div.container {
+        width: 100%;
+        border-bottom: none;
     }
 }
 
@@ -320,6 +335,60 @@ div.social-media div > h5 {
 
 @media (min-width: 576px) {
 
+
+}
+
+/* --- Medium --- */
+
+@media (max-width: 768px) {
+
+    a.navbar-brand {
+        margin-right: auto;
+    }
+
+    button.navbar-toggler-right {
+        right: 0rem;
+    }
+
+    nav.main-nav > div.container div.navbar-collapse {
+        background-color: #f3f3e7;
+    }
+
+    /* --- COLLECTION NAVIGATION --- */
+
+    button.main-btn {
+        top: 0;
+        right: 5rem;
+    }
+
+    nav.main-nav {
+        display: flex;
+        flex-direction: row;
+    }
+
+    nav.main-nav > div.collapse-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    nav.main-nav > div.collapse-nav div.navbar-collapse {
+        position: absolute;
+        top: 3rem;
+    }
+
+    nav.main-nav > div.collapse-nav div.navbar-collapse {
+        right: 0em;
+    }
+
+    nav.main-nav > div.collapse-nav div.navbar-collapse > ul li {
+        padding: 0.75em 7.5em 0.75em 3em;
+    }
+
+    nav.main-nav > div.collapse-nav div.navbar-collapse > ul li:hover {
+        background-color: #cecec2;
+        width: 100%;
+    }
 }
 
 
