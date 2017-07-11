@@ -27,6 +27,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    max-height: 1080px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: 100%;
@@ -34,8 +35,9 @@ body {
     padding-top: 56px;
 }
 
-.row, .contact_page {
+main.main-section {
     flex: 1;
+    background-color: #fcfcf6;
 }
 
 ul li {
@@ -277,7 +279,10 @@ section.projects > div.container div.row figure figcaption h6 {
 /* --- COLLECTION PROJECT POSTS --- */
 
 section.portfolio-posts {
-    margin-bottom: 3em;
+    background-color: #fff;
+}
+
+section.portfolio-posts div.container {
     border-bottom: 18px solid #f3f3e7;
 }
 
@@ -298,7 +303,7 @@ section.portfolio-posts div.row div h3 > a {
     color: #000;
 }
 
-section.portfolio-posts > div.row > div.col-sm-12 > h6 {
+section.portfolio-posts div.row > div.col-sm-12 > h6 {
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
@@ -308,10 +313,12 @@ section.portfolio-posts > div.row > div.col-sm-12 > h6 {
 /* --- BIBLIOGRAPHY --- */
 
 section.bibliography {
-    margin-bottom: 3.75em;
+    padding-top: 1.25em;
+    padding-bottom: 3.75em;
+    background-color: #fff;
 }
 
-section.bibliography > div.myAcc div.card-header {
+section.bibliography div.myAcc div.card-header {
     background-color: #fff;
     border-bottom: none;
     width: 100%;
@@ -320,7 +327,7 @@ section.bibliography > div.myAcc div.card-header {
     text-align: center;
 } 
 
-section.bibliography > div.myAcc div.card-header a {
+section.bibliography div.myAcc div.card-header a {
     display: inline-block;
     width: 100%;
     max-width: 10em;
@@ -330,36 +337,36 @@ section.bibliography > div.myAcc div.card-header a {
     border-bottom: 1px solid #fff;
 }
 
-section.bibliography > div.myAcc > div.row h5 {
+section.bibliography div.myAcc > div.row h5 {
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 0.75em;
 }
 
-section.bibliography > div.myAcc div.card-header a h6,
-section.bibliography > div.myAcc div.card-header + div p {
+section.bibliography div.myAcc div.card-header a h6,
+section.bibliography div.myAcc div.card-header + div p {
     text-align: center;
 }
 
-section.bibliography > div.myAcc div.card-header a h6 {
+section.bibliography div.myAcc div.card-header a h6 {
     padding-bottom: 0.25em;
 }
 
-section.bibliography > div.myAcc div.card-header + div p {
+section.bibliography div.myAcc div.card-header + div p {
     margin-bottom: 0;
 }
 
-section.bibliography > div.myAcc div.card-header a:hover h6 {
+section.bibliography div.myAcc div.card-header a:hover h6 {
     border-bottom: 1px dashed #000;
     font-weight: 700;
 }
 
-section.bibliography > div.myAcc div.card-header + div div.card-block {
+section.bibliography div.myAcc div.card-header + div div.card-block {
     padding: 0.5em 1.25em;
 }
 
-section.bibliography > div.myAcc > div.row {
+section.bibliography div.myAcc > div.row {
     margin-top: 3em;
 }
 
@@ -443,18 +450,22 @@ section.quote-img figcaption {
 
 /* --- ABOUT QWEN --- */
 
-section.about > div.row {
-    margin: 3em 0;
+section.about {
+    background-color: #fff;
 }
 
-section.about > div.row div:first-child {
+section.about > div.container {
+    padding: 3em 0;
+}
+
+section.about div.row div:first-child {
     display: block;
     width: 100%;
     max-width: 15em;
     margin: 1.5em auto 3em auto;  
 }
 
-section.about > div.row div h2 {
+section.about div.row div h2 {
     font-size: 1.25rem;
     font-weight: 700;
     margin-bottom: 0.75em;
@@ -489,13 +500,30 @@ section.blog-posts {
     background-color: #fcfcf6;
 }
 
-section.blog-posts div.row {
-    margin-top: 3em;
+section.blog-posts div.container {
+    margin-top: 1.5em;
 }
 
 section.blog-posts div.row div.col-sm-12 {
     display: block;
     text-align: center;
+}
+
+section.blog-posts div.row div.col-sm-12 > a {
+    text-decoration: none;
+    color: #000;
+}
+
+section.blog-posts div.row div.col-sm-12 > a h6 {
+    border-bottom: 1px dashed #fcfcf6;
+    width: 100%;
+    max-width: 8em;
+    margin: 0 auto;
+}
+
+section.blog-posts div.row div.col-sm-12 > a:hover h6 {
+    text-decoration: none;
+    border-bottom: 1px dashed #000;
 }
 
 section.blog-posts div.row div.col-sm-12 h3 {
@@ -509,7 +537,7 @@ section.blog-posts div.row div.col-sm-12 h6.blog-post-date {
 section.blog-posts div.row div.col-sm-12 h6 {
     font-weight: 700;
     text-transform: uppercase;
-    padding-bottom: 0.25em 0;
+    padding-bottom: 0.25em;
 }
 
 section.blog-posts div.row div.col-sm-12 > img {
@@ -678,11 +706,27 @@ div.social-media div > h5 {
         margin-right: 0;
     }
 
-    /* --- COLLECTION POST--- */
+    /* --- COLLECTION POSTS--- */
 
     div.post-md-hidden {
         display: none;
         overflow: hidden;
+    }
+
+    /* --- BLOG POSTS--- */
+
+    section.blog-posts > div.container div.row div.col-md-8 {
+        text-align: left;
+        border-left: 1px solid #000;
+        padding-left: 1.5em;
+    }
+
+    section.blog-posts div.row {
+        margin-top: 3em;
+    }
+
+    section.blog-posts div.row div.col-sm-12 > a h6 {
+        margin: 0;
     }
 }
 
@@ -700,22 +744,32 @@ div.social-media div > h5 {
 
     /* --- BIBLIOGRAPHY--- */
 
-    section.bibliography > div.myAcc > div.row > div:nth-child(2) {
+    section.bibliography div.container > div.myAcc > div.row > div:nth-child(2) {
         border-left: 1px solid #000;
     }
 
-    section.bibliography > div.myAcc div.card-header a {
+    section.bibliography div.container > div.myAcc div.card-header {
+        text-align: left;
+    }
+
+    section.bibliography div.container > div.myAcc div.card-header a {
         max-width: 9em;
     }
 
-    section.bibliography > div.myAcc div.card-header a h6 {
-        text-align: center;
+    section.bibliography div.container > div.myAcc div.card-header a h6,
+    section.bibliography div.container > div.myAcc > div.row h5,
+    section.bibliography div.container > div.myAcc div.card-header + div p {
+        text-align: left;
     }
 
-    section.bibliography > div.myAcc > div.row h5 {
-        text-align: center;
+    section.bibliography div.container > div.myAcc > div.row div.portfolio-snippets,
+    section.bibliography div.container > div.myAcc div.card-header + div p {
+        margin-left: 3em;
     }
-    
+
+    section.bibliography div.container > div.myAcc div.card-header + div div.card-block {
+        padding: 0.25em 0 0 0.25em
+    }
 }
 
 /* --- Extra large --- */
