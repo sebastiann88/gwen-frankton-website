@@ -148,9 +148,9 @@ div.card div > div.card-block {
     margin: 2.5em;
 }
 
-div.card-block {
+/*div.card-block {
     border-left: 1px solid #000;
-}
+}*/
 
 section > div.myAcc div.col-sm-12 {
     padding: 0;
@@ -262,7 +262,12 @@ section.projects > div.container div.row figure figcaption h6 {
     padding: 0.5em 0.25em 0.5em 1.5em;
 }
 
-/* --- PROJECT POSTS --- */
+/* --- COLLECTION PROJECT POSTS --- */
+
+section.portfolio-posts {
+    margin-bottom: 3em;
+    border-bottom: 18px solid #f3f3e7;
+}
 
 section.portfolio-posts div.row div.collection-post-text {
     margin: 1.5em 0.75em;
@@ -286,6 +291,64 @@ section.portfolio-posts > div.row > div.col-sm-12 > h6 {
     text-align: center;
     text-transform: uppercase;
     margin: 1.5em auto;
+}
+
+/* --- BIBLIOGRAPHY --- */
+
+section.bibliography {
+    margin-bottom: 3.75em;
+}
+
+section.bibliography > div.myAcc div.card-header {
+    background-color: #fff;
+    border-bottom: none;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0.25em 0 0 0.25em;
+    text-align: center;
+} 
+
+section.bibliography > div.myAcc div.card-header a {
+    display: inline-block;
+    width: 100%;
+    max-width: 10em;
+    margin: 0 auto;
+    text-align: center;
+    color: #000;
+    border-bottom: 1px solid #fff;
+}
+
+section.bibliography > div.myAcc > div.row h5 {
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 0.75em;
+}
+
+section.bibliography > div.myAcc div.card-header a h6,
+section.bibliography > div.myAcc div.card-header + div p {
+    text-align: center;
+}
+
+section.bibliography > div.myAcc div.card-header a h6 {
+    padding-bottom: 0.25em;
+}
+
+section.bibliography > div.myAcc div.card-header + div p {
+    margin-bottom: 0.05;
+}
+
+section.bibliography > div.myAcc div.card-header a:hover h6 {
+    border-bottom: 1px dashed #000;
+    font-weight: 700;
+}
+
+section.bibliography > div.myAcc div.card-header + div div.card-block {
+    padding: 0.5em 1.25em;
+}
+
+section.bibliography > div.myAcc > div.row {
+    margin-top: 3em;
 }
 
 /* --- SECTION FUNDRAISING --- */
@@ -440,7 +503,7 @@ div.social-media div > h5 {
 /* --- MEDIA QUERIES --- */
 
 @media (max-width: 576px) {
-        nav.navbar > div.container {
+    nav.navbar > div.container {
         width: 100%;
         border-bottom: none;
     }
@@ -575,6 +638,24 @@ div.social-media div > h5 {
     div.post-md-hidden {
         display: inline-block;
         overflow: visible;
+    }
+
+    /* --- BIBLIOGRAPHY--- */
+
+    section.bibliography > div.myAcc > div.row > div:nth-child(2) {
+        border-left: 1px solid #000;
+    }
+
+    section.bibliography > div.myAcc div.card-header a {
+        max-width: 9em;
+    }
+
+    section.bibliography > div.myAcc div.card-header a h6 {
+        text-align: left;
+    }
+
+    section.bibliography > div.myAcc > div.row h5 {
+        text-align: left;
     }
     
 }
