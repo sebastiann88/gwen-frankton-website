@@ -179,9 +179,13 @@ section > div.myAcc > div.row div.col-md-5 {
 
 /* --- COLLECTION SECTION --- */
 
+section.collection-section {
+    background-color: #fcfcf6;
+}
+
 section.collection-section > div.collection-intro {
     text-align: center;
-    border-bottom: 25px solid #f3f3e7;
+    border-bottom: 18px solid #f3f3e7;
 }
 
 section.collection-section > div.collection-intro h2 {
@@ -246,6 +250,16 @@ section.projects > div.container > div.row div.p-text::first-letter {
     font-family: "morionregular", sans-serif;
     font-weight: 700;
     padding-right: 0.20em;
+}
+
+section.projects > div.container > div.row > div.col-sm-12 > img {
+    background-color: #f3f3e7;
+    padding-bottom: 1.75em;
+}
+
+section.projects > div.container div.row figure figcaption h6 {
+    background-color: #f3f3e7;
+    padding: 0.5em 0.25em 0.5em 1.5em;
 }
 
 /* --- SECTION FUNDRAISING --- */
