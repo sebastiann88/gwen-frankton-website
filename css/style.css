@@ -673,6 +673,12 @@ div.social-media div > h5 {
         background-color: #f3f3e7;
     }
 
+    /* --- Blog Post --- */
+
+    section.blog-post-title div.container {
+        margin-top: 0.25em;
+    }
+
     /* --- COLLECTION NAVIGATION --- */
 
     button.main-btn {
