@@ -150,12 +150,6 @@ section.portfolio > div.myAcc div.row div > a {
     border-bottom: 1px solid #fcfcf6;
 }
 
-section.portfolio > div.myAcc div.row div > a:hover {
-    border-bottom: 1px dashed #000;
-    text-decoration: none;
-    padding-bottom: 0;
-}
-
 /* --- PORTFOLIO SNIPPETS --- */
 
 div.card div > div.card-block {
@@ -262,7 +256,7 @@ section.projects > div.container > div.row div.p-text {
 section.projects > div.container > div.row div.p-text::first-letter {
     font-size: 2rem;
     font-family: "morionregular", sans-serif;
-    font-weight: 700;
+    font-weight: 500;
     padding-right: 0.20em;
 }
 
@@ -308,6 +302,10 @@ section.portfolio-posts div.row > div.col-sm-12 > h6 {
     text-align: center;
     text-transform: uppercase;
     margin: 1.5em auto;
+}
+
+section.portfolio div.row > div.col-sm-12 ul {
+    border-left: 1px solid #000;
 }
 
 /* --- BIBLIOGRAPHY --- */
@@ -540,11 +538,39 @@ section.blog-posts div.row div.col-sm-12 h6 {
     padding-bottom: 0.25em;
 }
 
+section.collection-section h6.blog-post-date {
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+}
+
 section.blog-posts div.row div.col-sm-12 > img {
     border-radius: 50%;
     width: 100%;
     max-width: 8em;
     margin: 0.75em 0;
+}
+
+/* --- BLOG POST --- */
+
+section.blog-post > div.container p {
+    margin: 1.5em 0;
+}
+
+section.blog-post div.row:first-child p::first-letter {
+    font-size: 2rem;
+    font-family: "morionregular", sans-serif;
+    font-weight: 500;
+    padding-right: 0.20em;
+}
+
+section.blog-post + section.portfolio-posts > div.container {
+    border-bottom: none;
+    margin-top: 0.75em;
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;
+    background-color: #fff;
 }
 
 /* --- FOOTER --- */
@@ -588,14 +614,20 @@ div.social-media div > h5 {
 
 /* --- MEDIA QUERIES --- */
 
+/* --- Small --- */
+
 @media (max-width: 576px) {
     nav.navbar > div.container {
         width: 100%;
         border-bottom: none;
     }
-}
 
-/* --- Small --- */
+    /* --- Blog Post --- */
+
+    section.blog-post > div.container div.row div.margin-bottom-half {
+        margin-bottom: 1.5em;
+    }
+}
 
 @media (min-width: 576px) {
 
@@ -711,6 +743,12 @@ div.social-media div > h5 {
     div.post-md-hidden {
         display: none;
         overflow: hidden;
+    }
+
+    section.portfolio > div.myAcc div.row div > a:hover {
+        border-bottom: 1px dashed #000;
+        text-decoration: none;
+        padding-bottom: 0;
     }
 
     /* --- BLOG POSTS--- */
