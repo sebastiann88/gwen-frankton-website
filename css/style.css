@@ -573,6 +573,29 @@ section.blog-post + section.portfolio-posts > div.container {
     background-color: #fff;
 }
 
+section.blog-post-title div.row {
+    display: flex;
+}
+
+section.blog-post-title div.collection-intro img {
+    width: 100%;
+    max-width: 8em;
+}
+
+section.blog-post-title div.row > div.col-md-8 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section.blog-post-title h6.blog-post-date {
+    margin-top: 1.5em;
+} 
+
+section.blog-post-title div.row img {
+    border-radius: 50%;
+}
+
 /* --- FOOTER --- */
 
 footer {
@@ -766,7 +789,25 @@ div.social-media div > h5 {
     section.blog-posts div.row div.col-sm-12 > a h6 {
         margin: 0;
     }
-}
+
+    /* --- BLOG POST--- */
+
+    section.blog-post-title div.row > div.col-md-8 {
+        text-align: left;
+        border-left: 1px solid #000;
+        margin: 0.75em 0 0 1.5em;
+        padding-left: 1.5em;
+    }
+
+    section.blog-post-title div.collection-intro {
+        margin-top: 3em;
+        padding-bottom: 3em;
+    }
+
+    section.blog-post-title h6.blog-post-date {
+        margin-top: 0;
+        margin-bottom: 0.25em;
+    }
 
 /* --- Large --- */
 
