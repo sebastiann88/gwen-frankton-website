@@ -666,12 +666,6 @@ div.social-media div > h5 {
         width: 100%;
         border-bottom: none;
     }
-
-    /* --- Blog Post --- */
-
-    section.blog-post > div.container div.row div.margin-bottom-half {
-        margin-bottom: 1.5em;
-    }
 }
 
 @media (min-width: 576px) {
@@ -699,6 +693,10 @@ div.social-media div > h5 {
 
     section.blog-post-title div.container {
         margin-top: 0.25em;
+    }
+
+    section.blog-post > div.container div.row div.margin-bottom-half {
+        margin-bottom: 1.5em;
     }
 
     /* --- COLLECTION NAVIGATION --- */
