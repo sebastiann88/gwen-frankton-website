@@ -150,10 +150,17 @@ section.portfolio > div.myAcc div.row div > a {
     border-bottom: 1px solid #fcfcf6;
 }
 
+section.portfolio div.card,
+section.portfolio div.card-header {
+    background-color: #fcfcf6;
+    border-radius: 0;
+    border: none;
+}
+
 /* --- PORTFOLIO SNIPPETS --- */
 
 div.card div > div.card-block {
-    margin: 2.5em;
+    margin: 1.5em;
 }
 
 /*div.card-block {
@@ -221,6 +228,15 @@ nav.portfolio-drop-down {
     padding-bottom: 1.5em;
 }
 
+nav.portfolio-drop-down h6 {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+nav.portfolio-drop-down button.navbar-toggler-right {
+    bottom: 0.02em;
+} 
+
 nav.portfolio-drop-down > div.collapse-nav {
     width: 100%;
     max-width: 15em;
@@ -229,7 +245,7 @@ nav.portfolio-drop-down > div.collapse-nav {
 
 nav.portfolio-drop-down > div.collapse-nav div.navbar-collapse {
     position: absolute;
-    top: 3.35rem;
+    top: 3.05rem;
     left: 0;
     width: 100%;
     margin-right: 0;
@@ -297,7 +313,7 @@ section.portfolio-posts div.row div h3 > a {
     color: #000;
 }
 
-section.portfolio-posts div.row > div.col-sm-12 > h6 {
+section.portfolio-posts div.col-sm-12 > h6 {
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
@@ -389,6 +405,10 @@ section.fundraising ul {
     padding-left: 0;
 }
 
+section.fundraising h2 {
+    font-family: "skolar-sans-latin", sans-serif;
+}
+
 section.fundraising ul li,
 section.fundraising ul a {
     line-height: 1.8;
@@ -403,7 +423,7 @@ section.fundraising ul a:hover {
 
 section.fundraising h2 {
     font-size: 1rem;
-    font-weight: bold;
+    font-weight: 700;
     text-transform: uppercase; 
 }
 
@@ -453,7 +473,8 @@ section.about {
 }
 
 section.about > div.container {
-    padding: 3em 0;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
 }
 
 section.about div.row div:first-child {
@@ -464,6 +485,7 @@ section.about div.row div:first-child {
 }
 
 section.about div.row div h2 {
+    font-family: "skolar-sans-latin", sans-serif;
     font-size: 1.25rem;
     font-weight: 700;
     margin-bottom: 0.75em;
@@ -778,6 +800,10 @@ div.social-media div > h5 {
         border-bottom: 1px dashed #000;
         text-decoration: none;
         padding-bottom: 0;
+    }
+
+    section.portfolio-posts div.col-sm-12 > h6 {
+        text-align: left;
     }
 
     /* --- BLOG POSTS--- */
